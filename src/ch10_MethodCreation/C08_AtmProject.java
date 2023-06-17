@@ -111,9 +111,9 @@ public class C08_AtmProject {
     private static void parayatir() {
 
         System.out.println("ne kadar para yatırmak istersiniz: ");
-        double girilenPara = input.nextDouble();
+        int girilenPara = input.nextInt();
         bakiye += girilenPara;
-        System.out.println("bakiye=" + bakiye);
+        System.out.println("güncel bakiye=" + bakiye);
     }
 
     private static void bakiyesorgulama() {
