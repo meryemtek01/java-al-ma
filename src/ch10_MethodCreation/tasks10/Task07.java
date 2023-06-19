@@ -25,7 +25,13 @@ public class Task07 {
         int enBuyuk=enBuyukBul(s1, s2, s3);
         System.out.println("en buyuk"+enBuyuk);
 
+        System.out.println("en küçük="+enKucuk(s1,s2,s3));//ek küçügünü bulan eklendi
+
     }//main sonu
+
+    private static int enKucuk(int s1, int s2, int s3) {
+        return Math.min(s1,Math.min(s2,s3));
+    }
 
     private static int enBuyukBul(int s1, int s2, int s3) {
 

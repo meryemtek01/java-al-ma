@@ -1,5 +1,7 @@
 package ch10_MethodCreation.tasks10;
 
+import java.util.Scanner;
+
 public class Task12 {
 
     public static void main(String[] args) {
@@ -24,10 +26,27 @@ public class Task12 {
     validateEmail("hello@edabit.com")
     Çıktı : true
     */
+        Scanner input = new Scanner(System.in);
+        System.out.println("mailinizi giriniz");
+        String mail = input.nextLine();
+        epostaceketme(mail);
 
 
+    }//main sonu
+
+    private static void epostaceketme(String mail) {
+        if (mail.contains("@") && mail.contains(".")) {
+           int addI= mail.indexOf("@");
+           int nokta= mail.indexOf(".");
+            if (addI> 0 && addI > nokta + 1 && addI < mail.length() - 1) {
+                System.out.println(mail+" dogrudur");
+                //return true; //bunun için method boolean olmalı
+            }
+
+            }
+       System.out.println(mail+" yanlıştır");
+       // return false;
     }
-
 
 
 }

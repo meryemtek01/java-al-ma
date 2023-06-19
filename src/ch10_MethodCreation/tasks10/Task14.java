@@ -1,7 +1,9 @@
 package ch10_MethodCreation.tasks10;
 
-public class Task14 {
+import java.util.Scanner;
 
+public class Task14 {
+static  Scanner input=new Scanner(System.in);
     public static void main(String[] args) {
 
     /*
@@ -28,9 +30,34 @@ public class Task14 {
     */
 
 
+        System.out.println("saatlik çalışma ücreti giriniz: ");
+        double calismaucre= input.nextDouble();
 
+        System.out.println("hangi saat başladı  giriniz: ");
+        double baslamaSaat= input.nextDouble();
 
+        System.out.println("hangi saat bitti giriniz: ");
+        double bitisSaat= input.nextDouble();
+
+        System.out.println("mesaiyi kaçla katlayacağız giriniz: ");
+        double mesaikat= input.nextDouble();
+
+        ucretHesaplama(calismaucre,baslamaSaat,bitisSaat,mesaikat);
+
+    }//main sonu
+
+    private static void ucretHesaplama(double calismaucre, double baslamaSaat, double bitisSaat, double mesaikat) {
+       double toplamucret=0;
+        if (baslamaSaat>=9 && bitisSaat<=17){
+            toplamucret=8*calismaucre;
+        }
+        if (baslamaSaat>17 && bitisSaat<=20){
+            toplamucret+=mesaikat*calismaucre*1.8;
+
+        }
+        System.out.println("toplam ucret "+toplamucret);
     }
+
 
 
 }

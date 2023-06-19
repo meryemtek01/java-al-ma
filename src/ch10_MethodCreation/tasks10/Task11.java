@@ -1,7 +1,9 @@
 package ch10_MethodCreation.tasks10;
 
-public class Task11 {
+import java.util.Scanner;
 
+public class Task11 {
+static  Scanner input=new Scanner(System.in);
     public static void main(String[] args) {
 
     /*
@@ -21,9 +23,17 @@ public class Task11 {
     İpucu harfleri değiştirin ve ekrana yazdırın.
     */
 
+        System.out.println("bir metin giriniz");
+        String metin= input.nextLine().toLowerCase();
+        hackerDili(metin);
+
+
+    }//main sonu
+
+    private static void hackerDili(String metin) {
+metin.replaceAll("s", "5").replaceAll("a", "4").replaceAll("e","3").replaceAll("i","1").replaceAll("o","0");
 
     }
 
 
-
-}
+}//class sonu
