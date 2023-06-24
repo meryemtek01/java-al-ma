@@ -10,7 +10,8 @@ public class _26_Scanner5 {
 
         //Kodu aşağıya  yazınız.
 
-
+String sehir="ankara";
+        System.out.println("sehir = " + sehir);
 
     }
 }
