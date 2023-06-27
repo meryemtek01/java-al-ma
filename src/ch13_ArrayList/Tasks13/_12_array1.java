@@ -1,5 +1,8 @@
 package ch13_ArrayList.Tasks13;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class _12_array1 {
 
     /*
@@ -18,12 +21,34 @@ public class _12_array1 {
     Output: false
          */
 
+    static  int count=0;
     public static void main(String[] args) {
+        int[] array1 = {1, 2, 1, 1,3,4,1,};
+
+        System.out.println("array1.toString() = " + Arrays.toString(array1));
+        System.out.println("dupicate(array1) = " + dupicate(array1)+ "   "+count);
 
 
+    }//main sonu
 
+    private static boolean dupicate(int[] array1) {
 
+        for (int i = 0; i < array1.length; i++) {
+            for (int j = 1; j < array1.length;j++){
+                if (array1[i] == array1[j]) {
+                   count++;
+                  //  System.out.println(array1[i]+" sayısından " + count +" tane var");
+                    return true;
+
+                }
+            }
+        }
+        return false;
     }
 
 
-}
+        
+        
+    }//clas sonu
+
+
