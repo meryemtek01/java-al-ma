@@ -13,17 +13,20 @@ public class SayiTahminEtmeOyunu {
         Scanner input=new Scanner(System.in);
         Random rnd=new Random();
 
-        int pcSayi= rnd.nextInt((100)+1);
+        int pcSayi= rnd.nextInt((100)+1);//(0+1,100) arasında
         System.out.println("pcSayi = " + pcSayi);
         System.out.println("*** tahmin oyununa hoş geldiniz *** \n 1 ile 100 arası bir sayı giriniz");
         int tahminSayi= input.nextInt();
         int count= 0;
         if (tahminSayi<100 && tahminSayi>0){
-            while (tahminSayi!=pcSayi){
+
+            while (tahminSayi!=pcSayi){//bu şart sagladığı sürece
+
                 if (tahminSayi<pcSayi){
                     System.out.println("sayıtı arttırer"  );
                     tahminSayi= input.nextInt();
                     count++;
+
                 } else if (tahminSayi>pcSayi) {
                     System.out.println("sayıyı azalt"  );
                     tahminSayi=input.nextInt();
