@@ -11,7 +11,7 @@ input : 1,2,-3,4,-5,-6
 output :-1,-2,3,-4,5,6
 
 
- */
+ */System.out.println("****");
         int[] arr= {1,2,3,4,5,6};
         sayininTersisareti(arr);
         isaretDeğiş(arr);
@@ -30,7 +30,8 @@ output :-1,-2,3,-4,5,6
 
     private static void sayininTersisareti(int[] arry) {
         for (int w:arry) {
-
+            w *= -1;
+            System.out.print( w +" ");
 
         }
     }
