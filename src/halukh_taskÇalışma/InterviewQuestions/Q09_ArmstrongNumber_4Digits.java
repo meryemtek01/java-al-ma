@@ -1,5 +1,9 @@
 package halukh_taskÇalışma.InterviewQuestions;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Q09_ArmstrongNumber_4Digits {
    /*
     Armstrong sayi:herhangi bir sayinin rakamlarinin kupleri toplami o sayiyi veriyorsa sayi  Armstrong sayidir
@@ -12,6 +16,20 @@ public class Q09_ArmstrongNumber_4Digits {
 
     public static void main(String[] args) {
 
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bizim ooolannn bişeyleee girceng mi : ");
+        int rakamKupToplam = 0;
+        String sayi = input.next();//1634
 
+        String[] rakam = sayi.split("");//str girlen sayının her bitr rakamı rakam araya eleman olarak atandı[1,6,3,4]
+        // System.out.println("Arrays.toString(rakam) = " + Arrays.toString(rakam));
+
+        for (int i = 0; i < rakam.length; i++) {
+            rakamKupToplam += Math.pow(Double.parseDouble(rakam[i]), rakam.length);
+        }
+        System.out.println(
+                rakamKupToplam == Integer.parseInt(sayi) ?
+                        ("bizim oolann sayi " + sayi + " AMSTRONG :) ") :
+                        "bizim oolann sayi " + sayi + " AMSTRONG değil :( ");
     }
 }
