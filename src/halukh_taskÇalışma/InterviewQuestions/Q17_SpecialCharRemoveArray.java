@@ -20,7 +20,9 @@ public class Q17_SpecialCharRemoveArray {
 
     public static void main(String[] args) {
 
-    }
+
+     //   getSum();
+    }//main sonu
 
 
 }
