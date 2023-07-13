@@ -18,7 +18,7 @@ public class _06_arraylist6 {
 
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<Integer>();
-        list = new ArrayList<Integer>(List.of(5, 4, 6, 2, 1));
+        list = new ArrayList<Integer>(List.of(5, 4, 6, 2, 3));
 
         int sonuc = hillNum(list);
         System.out.println("sonuc = " + sonuc);

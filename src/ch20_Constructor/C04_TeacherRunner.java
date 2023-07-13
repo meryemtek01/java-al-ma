@@ -7,6 +7,9 @@ public class C04_TeacherRunner {
 
 //task pm li const kullanarak
 // ogretmen objesi create ediniz tum field lari kullanma opsionel
+        C04_Teacher tch = new C04_Teacher("Ayse",
+                "Kilic","muzik");
+        System.out.println(tch);
         C04_Teacher ogretmen = new C04_Teacher();
 
         ogretmen.ad= "zeynep";
@@ -20,7 +23,10 @@ public class C04_TeacherRunner {
 
         System.out.println("ogretmen = " + ogretmen);
 
-      //  C04_Teacher ogretmenFullPmli = new C04_Teacher(String ad, String soyad, String brans, int tecrube, int yas, double maas, boolean emekliMi);
+        C04_Teacher ogretmenFullPmli = new C04_Teacher(1,"bayram","aslan"
+                ,"fizik", 30,55,50000.5,false);
+
+        System.out.println("ogretmenFullPmli = " + ogretmenFullPmli);
     }
 
 }

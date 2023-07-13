@@ -10,7 +10,7 @@ public class C03_Student {//pojo class, plain old java object(reel de adi entity
     double degree;
     int schoolNo;
     boolean success;
-    public void graduate(){
+    public void graduate(){//mezun olup olmadigini olcen met
         if (degree>=60){
             System.out.println("you are graduated");
         }else{

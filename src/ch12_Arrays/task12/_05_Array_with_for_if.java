@@ -32,7 +32,7 @@ public class _05_Array_with_for_if {
        for (int i = 0; i < eleman.length; i++) {}
       toplam1+=Arrays.stream(eleman).map(i-> (i % 2 == 0) ? i : -i).sum();
 
-       // Arrays.stream(eleman).sum());
+        // Arrays.stream(eleman).sum());
 
         System.out.println("Elemanların toplamı: " + toplam1);
     }

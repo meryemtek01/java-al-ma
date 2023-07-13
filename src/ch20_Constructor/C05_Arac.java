@@ -21,12 +21,24 @@ birisi ilk satirda olamayacaktir, bu da ilk kuralla celisir.
         System.out.println("pm siz const çalişti");
 
     }
+
     public C05_Arac(int i) {// 1 pm li const
-        this(340,"Tesla");
+        this(340, "Tesla");
+        this.maxHiz = i;
+        System.out.println("1 pm li const calisti");
+    }
+
+    public C05_Arac(int i, String marka) {//2 pm li const
+        this("AUDI", 400);
+        System.out.println(" 2 pm li const calisti int ve  String ");
+        this.maxHiz = i;
+        this.model = marka;
 
     }
-    public C05_Arac(int i,String marka){//2 pm li cost
-
-
+    public C05_Arac(String marka, int i) {// 2 pm li const
+        System.out.println(" 2 pm li const calisti String ve int");
+        this.maxHiz = i;
+        this.model = marka;
     }
+
 }

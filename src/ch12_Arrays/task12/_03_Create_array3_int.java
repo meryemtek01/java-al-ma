@@ -1,5 +1,6 @@
 package ch12_Arrays.task12;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class _03_Create_array3_int {
@@ -23,4 +24,5 @@ public class _03_Create_array3_int {
     //    System.out.println("toplam2 = " + toplam2);
         System.out.println("Arrays.stream(arr).sum() = " + Arrays.stream(arr).sum());
     }
+
 }

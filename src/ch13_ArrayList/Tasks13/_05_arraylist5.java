@@ -1,6 +1,7 @@
 package ch13_ArrayList.Tasks13;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class _05_arraylist5 {
@@ -23,22 +24,16 @@ public class _05_arraylist5 {
         System.out.println("terslist = " + terslist);
 
     }//main sonu
- /*   public static ArrayList<String> rotateList(ArrayList<String> list) {
+  public static ArrayList<String> rotateList(ArrayList<String> list) {
         // ArrayList'in dizilişini tersine çeviriyoruz.
         Collections.reverse(list);
 
         // Tersine çevrilmiş ArrayList'i döndürüyoruz.
         return list;
-    }*/
-
-
-    private static ArrayList<String> rotateList(ArrayList<String> list) {
-        ArrayList<String> terslist = new ArrayList<String>();
-        for (int i = list.size() - 1; i <= 0; i--) {
-            terslist.add(list.get(i));
-        }
-        return terslist;
     }
+
+
+
 
 
 }//class sonu

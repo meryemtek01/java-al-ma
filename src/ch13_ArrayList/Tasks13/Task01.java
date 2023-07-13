@@ -15,15 +15,19 @@ public class Task01 {
          */
 
         ArrayList<String> names = new ArrayList<>(List.of("Ali", "Veli", "Ayse", "Fatma", "Omer"));
-        ArrayList<String> nameA = new ArrayList< >();
-        for (String i : names) {
-            if (names.get(Integer.parseInt(i)).toLowerCase().contains("a")) {
-                nameA.add(names.get(Integer.parseInt(i)));
+        System.out.println("names = " + names);
+        ArrayList<String> nameA = new ArrayList<>();
+        for (String name : names) {
+            // if (names.get(Integer.parseInt(i)).toLowerCase().contains("a")) {
+            if (name.toLowerCase().contains("a")) {
+                nameA.add(String.valueOf(names.remove(name)));
 
 
 
+            }
         }
-        }
+        System.out.println("nameA = " + nameA);
+
 
     }
 }

@@ -1,5 +1,7 @@
 package halukh_taskÇalışma.InterviewQuestions;
 
+import java.util.Scanner;
+
 public class Q19_UsingDoWhilePrintNumber {
     /* Task->
         create one int
@@ -10,6 +12,17 @@ public class Q19_UsingDoWhilePrintNumber {
         100'e kadar 5 artan doğal sayıları print eden do-while code create ediniz.
      */
     public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.println("bizim oglan bir sayı giriniz");
 
-    }
+        int sayi=input.nextInt();
+        do {
+            System.out.println(sayi+" ");
+            sayi+=5;
+
+
+
+        }while (sayi<=100);
+
+    }//main sonu
 }

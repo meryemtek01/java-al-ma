@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+
+
 public class Task01_Market {
     /* TASK :
      * Bir bakkalın 7 günlük tüm kazançlarını günlük olarak gösteren bir program yazınız.
@@ -35,11 +37,14 @@ public class Task01_Market {
             n++;
         }
 
-      //  getOrtalamaKazanc();
-      //  getOrtalamaninUstundeKazancGünleri();
-      //  getOrtalamaninAltindaKazancGünleri();
+      getOrtalamaKazanc1();
+      // getOrtalamaninUstundeKazancGünleri1();
+    //   getOrtalamaninAltindaKazancGünleri1();
 
     }//main sonu
+
+    private static void getOrtalamaKazanc1() {
+    }
 
 
 }//class son

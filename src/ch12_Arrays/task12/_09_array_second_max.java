@@ -17,6 +17,8 @@ int [] arr={15 , 25, 22, 18, 30};
         Arrays.sort(arr);
 
         System.out.println("Arrays.toString(arr) = " + Arrays.toString(arr));
+        int i = arr.length - 2;
+       
         //(arr.[arr.length-2])
 
 

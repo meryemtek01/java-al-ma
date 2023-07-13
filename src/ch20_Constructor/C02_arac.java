@@ -44,6 +44,7 @@ public class C02_arac {
         arac2.motorHacmi =4.0;
         arac2.tramer = "kazasız";
         arac2.yil = 2023;
+        System.out.println("Ali bey in arac2 = " + arac2);
 
 
     }

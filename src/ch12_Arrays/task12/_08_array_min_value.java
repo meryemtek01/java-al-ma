@@ -19,6 +19,8 @@ int [] arr={14 , 19 , 5 , 21};
         System.out.println("arr[0] = " + arr[0]);
         //2. yol
         System.out.println("Arrays.stream(arr).min() = " + Arrays.stream(arr).min());
+     //   Math.min(Arrays.stream(arr).min();
+
 
 
     }
