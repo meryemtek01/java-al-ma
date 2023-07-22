@@ -11,7 +11,16 @@ public class T02_Runner {
     T01_Runner Class obj ile enz 2  aylık elektrik tüketim faturası print eden code create ediniz
 
      */
+    public static void main(String[] args) {
+        T02_Musteri musteri = new T02_Musteri("ali");
 
+        System.out.println("musteri = " + musteri);
+        T02_ElektrikHesabi obj = new T02_ElektrikHesabi(100, 2);
+
+
+
+        System.out.println("obj.odenecekTutar() = " + obj.odenecekTutar());
+    }
 
 
 }
