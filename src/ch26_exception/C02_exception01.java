@@ -1,10 +1,9 @@
 package ch26_exception;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class C02 {
+public class C02_exception01 {
 
     public static void main(String[] args) throws IOException {
 
@@ -28,5 +27,11 @@ public class C02 {
         }
         System.out.println();
         System.out.print("fis = " + fis);
+        /*BufferedWriter bw=new BufferedWriter(new FileWriter("C:\\örnekler\\src\\ExceptionHandling\\javadanEsintiler"));
+        bw.write("try catch throw");
+        bw.close();
+
+         */
+
     }
 }
